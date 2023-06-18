@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner {
+  background-image: url("../public/assets/banner/banner-bg/banner.webp");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.chef_detail {
+  background-image: url("../public/assets/chef_details_bg.jpeg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.chef_banner_img {
+  animation: zoom 20s ease-in-out infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    text-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
+  }
+  25% {
+    text-shadow: 0 0 40px rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(0, 0, 255, 0.5);
+  }
+  75% {
+    text-shadow: 0 0 40px rgba(255, 255, 0, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 40px rgba(255, 0, 255, 0.5);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #f44336; /* red */
+  }
+  25% {
+    color: #2196f3; /* blue */
+  }
+  50% {
+    color: #4caf50; /* green */
+  }
+  75% {
+    color: #ff9800; /* orange */
+  }
+  100% {
+    color: #9c27b0; /* purple */
+  }
+}
+
+.tag_name {
+  animation: breathe 3s ease-in-out infinite;
+}
+.tag_name {
+  animation: color-change 2s ease-in-out infinite;
+}
